@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "antd": "4.21.7",
     "joy": "github:ChenBonBon/joy",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -18,6 +17,7 @@
     "@types/react": "^17.0.47",
     "@types/react-dom": "^17.0.17",
     "@vitejs/plugin-react": "^2.0.0",
+    "antd": "4.21.7",
     "typescript": "^4.7.4",
     "vite": "^3.0.2"
   }
