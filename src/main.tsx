@@ -1,10 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import { ConfigProvider } from "joy";
+import "joy/dist/style.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ConfigProvider.config({
+  theme: {
+    variables: {
+      "btn-border-radius": "16px",
+    },
+  },
+});
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+    <ConfigProvider>
+      <App />
+    </ConfigProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
